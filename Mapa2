@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAPA FRONT-END</title>
+        <style>
+       
+         {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #1616f5;
+            background-color: #f9f9f9;
+        }
+        
+        
+        header {
+            background: linear-gradient(200deg, #4b57fd, #1927eb,#4b57fd);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .avatar {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            border: 3px solid rgb(255, 255, 255);
+            margin: 1rem auto;
+            display: block;
+        }
+        
+        
+        nav {
+            background: linear-gradient(135deg,#1927eb);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        
+        nav li {
+            margin: 0 1rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: #0127fa;
+        }
+        
+        
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        section {
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #0127fa;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 0.5rem;
+        }
+        
+        
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        article {
+            flex: 1 1 300px;
+            border: 1px solid #ddd;
+            padding: 1.5rem;
+            border-radius: 6px;
+            
+        }
+        
+        article h3 {
+            color: #0127fa;
+        }
+        
+        
+        aside {
+            background-color: #f0f0f0;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-links a {
+            color: #0127fa;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        
+        footer {
+            background-color: #f0f0f0;
+            color: rgb(5, 0, 0);
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        
+        @media (max-width: 750px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav li {
+                margin: 0.5rem 0;
+            }
+            
+            .projects {
+                flex-direction: column;
+            }
+        }
+        </style>
+     </head>
+<body>
+    <header>
+        <h1>Claudio Santos</h1>
+        <p>"ESTUDAR É INVESTIR NO SEU FUTURO."</p>
+        <img src="https://scontent.fsdu19-1.fna.fbcdn.net/v/t1.6435-9/67788799_2610179509016014_7386532859294515200_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeG-gwCQ1kWq5k3KRurTF6mcF6uv2i7xRLIXq6_aLvFEsiEnCDjvwdm0Gumx7WwNgrlYuLzBU9FmaQ4bdGDKAKKG&_nc_ohc=8Pdgl9-SVHYQ7kNvwFOiZV5&_nc_oc=AdliF3afCPG_zoeI9zDNhOeNy9HiIf6ff6_n5pJUCUDGDq3w1Aj4u0cAt_5ste0uLFg&_nc_zt=23&_nc_ht=scontent.fsdu19-1.fna&_nc_gid=OuJB89-3oxSD45FQF3VPSA&oh=00_AfPSj6BYG2IahBykXj40xMjgYP2HvLV_sN0jRoEVszTQXw&oe=688DD473"   class="avatar">
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre Mim</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            
+        </ul>
+    </nav>
+    
+<main>
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <p>Claudio Santos<br>
+                45 anos, casado e pai de menina. Técnico de informática e estudande de nivel superior em análise e desenvolvimento de sistemas.  
+            </p>
+         
+        </section>
+        
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>HTML5 e CSS3 </li>
+                <li>PHOTOSHOP</li>
+                <li>C++</li>
+                <li>PYTHON</li>
+                <li>MANUTENÇÃO DE HARDWARE</li>
+                <li>REDES</li>
+                
+            </ul>
+        </section>
+        
+        <section id="projetos">
+            <h2>Projetos</h2>
+            <div class="projects">
+               <article>
+                  <strong>Tecnologias:</strong>
+                  <P> 
+                    <li>HTML5 e CSS3 </li>
+                    <li>PYTHON</li>
+                    <li>C++</li>
+                
+                
+                </p>
+                </article>
+            </div>
+        </section>
+        
+        <aside>
+             <div class="social-links">
+                <a href="https://github.com" target="_blank">GitHub</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+            </div>
+        </aside>
+
+     <footer> 
+
+       
+        
+            <p>Informações para contato: <a href="mailto:claudio@gmail.com">claudio@gmail.com</a></p>
+            <p>© 2025 Claudio Santos - Todos os direitos reservados</p>
+
+     
+     </footer>   
+</main>
+    
